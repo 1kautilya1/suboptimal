@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+<!-- prettier-ignore -->
+{% block title %}{{ article.title }}{% endblock %}
+{% block url %}{{ SITEURL }}/{{ article.url }}{% endblock %}
+
+{% if article.summary %}
+{% block description %}{{ article.summary | striptags | safe | truncate(300) }}{% endblock %}
+{% endif %}
+
+{% if article.image %}
+{% block image %}{{ SITEURL }}/images/{{ article.image }}{% endblock %}
+{% endif %}
+
+{% block content %}
+
+<div class="bg-gray-200 flex-grow p-4">
+    <main role="main" class="container md:mt-8 mx-auto text-gray-700 bg-white w-full md:w-3/4 lg:w-1/2">
+        <article class="p-5">
+            <header>
+                <h1>
+                    <a
+                        href="{{ SITEURL }}/{{ article.url }}"
+                        class="text-4xl font-bold"
+                        rel="bookmark"
+                        title="Permalink to {{ article.title|striptags }}"
+                        >{{ article.title }}</a
+                    >
+                </h1>
+            </header>
+
+            <div class="markdown">{{ article.content }}</div>
+        </article>
+    </main>
+</div>
+
+{% endblock %}
