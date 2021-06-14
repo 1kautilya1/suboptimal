@@ -88,6 +88,41 @@ Researchers often invent complicated names for simple things. This page will hel
     </ul>
 </td>
 </tr>
+<tr>
+<td valign="top">Synthetic Data</td>
+<td>
+    <p>Synthetic data is comprised of data that isn’t based on any real-world phenomena or events, rather it’s generated via a computer program. The primary purpose of a synthetic dataset is to be versatile and robust enough to be useful for the training of machine learning models.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">Ensemble Methods</td>
+<td>
+    <p>Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to </p>
+    <ul>
+        <li>Decrease variance (Bagging) </li>
+        <li>Bias (Boosting)</li>
+        <li>Improve predictions (Stacking)</li>
+    </ul>
+</td>
+</tr>
+<tr>
+<td valign="top">Discriminatory Threshold</td>
+<td>
+    <p>The discrimination threshold is just the cutoff imposed on the predicted probabilities for assigning observations to each class. If you have a classifier (probabilistic) your output is a probability (a number between 0 and 1), ideally you want to say that everything larger than 0.5 is part of one class and anything less than 0.5 is the other class.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">Overfitting</td>
+<td>
+    <p>Overfitting occurs when your model learns the training data too well and incorporates details and noise specific to your dataset. You can tell a model is overfitting when it performs great on your training/validation set, but poorly on your test set (or new real-world data).</p>
+</td>
+</tr>
+<tr>
+<td valign="top">Underfitting</td>
+<td>
+    <p>Underfitting occurs when your model over-generalizes and fails to incorporate relevant variations in your data that would give your model more predictive power. You can tell a model is underfitting when it performs poorly on both training and test sets.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
